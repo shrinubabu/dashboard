@@ -1,0 +1,58 @@
+.login-body{
+    background-image: url(../images/login-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    flex-direction:column;
+}
+
+.login-body> div{
+    color:white;
+    text-align:center;
+    margin-top:30px;
+}
+
+#login-form{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(to bottom right, rgb(174,201,232) 5%, #c8d7e1 95%);
+    width:320px;
+    height:300px;
+    border-radius:20px;
+    box-shadow:2px 2px 15px;
+    align-self:center;
+}
+
+#login-form input{
+    width:250px;
+    height:30px;
+    margin:5px;
+    text-align:center;
+    transition: all .15s ease-in-out;
+    box-shadow: none;
+    border: 1px solid #c8d7e1;
+    border-radius:3px;
+}
+
+#login-form input::-webkit-input-placeholder{
+    color: #005082;
+}
+
+#login-form input[type="submit"] {
+    width: 120px;
+    background: #1072BB;
+    color: white;
+    border-radius: 6px;
+}
+#login-form a{
+    font-size:12px;
+    font-family:'verdana';
+    color:#005082;
+}
+
+#tata-login-logo img{
+    width: 93px;
+    margin-bottom: 15px;
+}
