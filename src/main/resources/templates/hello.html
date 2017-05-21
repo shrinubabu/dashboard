@@ -3,11 +3,18 @@
       xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
     <title>Hello World!</title>
+    <script src="resources/JS/echarts.min.js"></script>
+    <script src="resources/JS/jquery-3.2.1.min.js"></script>
+    <script src="resources/JS/custom/drawchart.js"></script>
 </head>
 <body>
 <h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
 <form th:action="@{/logout}" method="post">
     <input type="submit" value="Sign Out"/>
+    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+    <div id="chart-container">
+        <div id="chart1" style="width: 600px;height:400px;"></div>
+    </div>
 </form>
 </body>
 </html>
