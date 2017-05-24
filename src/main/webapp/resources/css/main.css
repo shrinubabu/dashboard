@@ -1,0 +1,41 @@
+body{
+    background: #a2c1d5 !important;
+    background-repeat:no-repeat;
+}
+
+chartcolors{
+    /*Colors for Chart items - for reference*/
+    color:#737373;
+    color:#F15A61;
+    color:#7CC26A;
+    color:#5D9AD1;
+    color:#FAA759;
+    color:#9F66AB;
+    color:#CE7057;
+    color:#D77EB4;
+}
+
+.panel.panel-default{
+    box-shadow:2px 2px 10px ;
+}
+.panel-heading{
+    background:#def2ff !important;
+    display: flex;
+    justify-content: space-between;
+    font-weight:bold;
+    font-size:1.5em;
+}
+
+#refresh-btn img{
+    height:20px;
+}
+
+
+.navbar-inverse{
+    background:#384E6B !important;
+    color:#fff !important;
+}
+
+.navbar-inverse *{
+    color:#fff !important;
+}

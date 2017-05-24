@@ -1,27 +1,44 @@
 package com.tcs.iou.entities.login;
 
-import javax.persistence.*;
+import org.springframework.data.annotation.Id;
+
 import java.util.Set;
 
 /**
  * @author Shrinubabu
  */
 
-@Entity
+
 public class Role {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
     private String role;
 
-    @ManyToMany(mappedBy = "roles",fetch = FetchType.LAZY)
     private Set<User> users;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public String getRole() {
         return role;
     }
 
-    // GETTERS and SETTERS
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    public Set<User> getUsers() {
+        return users;
+    }
+
+    public void setUsers(Set<User> users) {
+        this.users = users;
+    }
 }
