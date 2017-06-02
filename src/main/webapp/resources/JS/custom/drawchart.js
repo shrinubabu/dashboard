@@ -69,7 +69,7 @@ $(document).ready(function(){
         var legendArr = [];
         for(var i=0;i<data.length;i++){
             var amount = data[i].sumAmountUSDBEACON/1000000;
-            var item = {value:amount.toFixed(2),label:{normal:{show:true,position:'top',formatter:'${c}'+'m',textStyle:{color:'#CE7057',fontSize:'13em'}}}};
+            var item = {value:amount.toFixed(2),label:{normal:{show:true,position:'top',formatter:'${c}'+'m',textStyle:{color:'#F15A61',fontSize:'13em'}}}};
             arrData.push(item);
             //arrData.push("{value:'"+data[i].sumAmountUSDBEACON+"',label:{normal:{show:true,position:'top'}}}");
             legendArr.push(data[i].quarter);

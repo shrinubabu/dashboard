@@ -32,10 +32,24 @@ chartcolors{
 
 
 .navbar-inverse{
-    background:#384E6B !important;
-    color:#fff !important;
+    background:#2d6ba0 !important;
+    color:#aaa !important;
 }
 
 .navbar-inverse *{
-    color:#fff !important;
+    color:#eee !important;
+}
+
+#scorecard-datatable{
+    background:#fff;
+}
+
+#score-card-table>thead>tr{
+    background:#5f9dd3;
+    color:#eee;
+}
+
+.dropdown, .dropup {
+    position: relative;
+    display: inline;
 }
